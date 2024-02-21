@@ -14,12 +14,12 @@ class NoteItem extends StatelessWidget {
       child: Column(
         children: [
           ListTile(
-            title: Text(
+            title: const Text(
               'Flutter Tips',
               style: TextStyle(color: Colors.black, fontSize: 25),
             ),
             subtitle: Padding(
-              padding: EdgeInsets.only(top: 12),
+              padding: const EdgeInsets.only(top: 12),
               child: Text(
                 'Build your ahmed abdelhaliem career',
                 style: TextStyle(
@@ -31,9 +31,12 @@ class NoteItem extends StatelessWidget {
               icon: const Icon(
                 FontAwesomeIcons.trash,
                 color: Colors.black,
-                size: 22,
+                size: 20,
               ),
             ),
+          ),
+          const SizedBox(
+            height: 20,
           ),
           Align(
             alignment: Alignment.bottomRight,

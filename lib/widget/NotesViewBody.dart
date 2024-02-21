@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:untitled8/widget/Item_list_vieew.dart';
-import 'package:untitled8/widget/custom_note_item.dart';
 
 import 'CustomAppBar.dart';
 
