@@ -3,9 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:untitled8/cubits/add_note_cubit/cubit/add_note_cubit.dart';
+import 'package:untitled8/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:untitled8/widget/add%20_note_form.dart';
-import 'package:untitled8/widget/custom_button.dart';
 import 'package:untitled8/widget/custom_text_feild.dart';
 
 class AddNoteButtonSheet extends StatefulWidget {
@@ -24,9 +23,9 @@ class _AddNoteButtonSheetState extends State<AddNoteButtonSheet> {
         listener: (context, state) {
           if (state is AddNoteFailure) {
             print("filure${state.errorMessage}");
-            if (state is AddNoteLoading) {
-              Navigator.pop(context);
-            }
+          }
+          if (state is AddNoteLoading) {
+            Navigator.pop(context);
           }
         },
         builder: (context, state) {
